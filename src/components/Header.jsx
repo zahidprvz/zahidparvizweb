@@ -27,7 +27,7 @@ const Header = () => {
           <img src={profileImage} alt="Profile" className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-4" /> {/* Profile picture */}
           <div>
             <h1 className="text-lg md:text-xl font-bold">Zahid Parviz</h1>
-            <p className="text-sm md:text-base mt-2">Robotics Engineer | Flutter Developer | Machine Learning</p>
+            <p className="text-sm md:text-base mt-2">Flutter Developer & AI Researcher | Expert in Mobile App Development & Artificial Intelligence</p>
           </div>
         </div>
         <nav className="md:hidden">
