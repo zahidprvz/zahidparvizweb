@@ -14,6 +14,7 @@
     "emailjs": "^4.0.3",
     "firebase": "^10.12.2",
     "framer-motion": "^11.0.24",
+    "mongodb": "^6.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
