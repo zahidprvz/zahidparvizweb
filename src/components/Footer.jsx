@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiGithub, FiLinkedin, FiDownload } from 'react-icons/fi'; // Import GitHub, LinkedIn, and Download icons
+import { FiGithub, FiLinkedin } from 'react-icons/fi'; // Import GitHub and LinkedIn icons
+import { FiDownload } from 'react-icons/fi'; // Import Download icon
 
 const Footer = () => {
   return (
@@ -36,16 +37,12 @@ const Footer = () => {
                 <FiLinkedin className="mr-2" /> LinkedIn
               </motion.a>
               <motion.a
-                href="/src/assets/documents/zahidresume-r.pdf"
+                href="https://github.com/zahidprvz/zahidparvizweb/blob/main/src/assets/documents/zahidresume-r.pdf"
                 className="text-lg text-gray-300 hover:text-yellow-500 flex items-center"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 target="_blank"
                 rel="noopener noreferrer"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.open('/src/assets/documents/zahidresume-r.pdf', '_blank');
-                }}
               >
                 <FiDownload className="mr-2" /> Resume
               </motion.a>
