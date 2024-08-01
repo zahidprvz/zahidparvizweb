@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FiGithub, FiLinkedin } from 'react-icons/fi'; // Import GitHub and LinkedIn icons
+import { FiDownload } from 'react-icons/fi'; // Import Download icon
 
 const Footer = () => {
   return (
@@ -27,13 +28,23 @@ const Footer = () => {
               </motion.a>
               <motion.a
                 href="https://www.linkedin.com/in/zahidprvz/"
-                className="text-lg text-gray-300 hover:text-yellow-500 flex items-center"
+                className="text-lg text-gray-300 hover:text-yellow-500 mr-4 flex items-center"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FiLinkedin className="mr-2" /> LinkedIn
+              </motion.a>
+              <motion.a
+                href="/src/assets/documents/zahidresume-r.pdf"
+                className="text-lg text-gray-300 hover:text-yellow-500 flex items-center"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiDownload className="mr-2" /> Resume
               </motion.a>
             </div>
           </div>
