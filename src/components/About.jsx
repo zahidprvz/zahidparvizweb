@@ -3,25 +3,26 @@ import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import aboutImage from '../assets/aboutme.jpg'; // Importing the image
 
 const skills = [
-  { name: 'Data Structures & Algorithms', expertise: 80 },
-  { name: 'Flutter App Dev', expertise: 90 },
-  { name: 'Artificial Intelligence', expertise: 85 },
-  { name: 'Deep Learning', expertise: 80 },
+  { name: 'Flutter App Development', expertise: 95 },
+  { name: 'Django (Backend)', expertise: 85 },
+  { name: 'AI/ML/DL', expertise: 90 },
+  { name: 'Data Structures & Algorithms', expertise: 85 },
   { name: '.NET', expertise: 80 },
-  { name: 'Java', expertise: 90 },
-  { name: 'Git', expertise: 80 },
-  { name: 'Python', expertise: 70 },
-  { name: 'SQL', expertise: 65 },
-  { name: 'C#', expertise: 90 },
-  { name: 'C++', expertise: 75 },
+  { name: 'Python', expertise: 80 },
+  { name: 'SQL', expertise: 75 },
+  { name: 'C#', expertise: 85 },
+  { name: 'Dart', expertise: 90 },
+  { name: 'Firebase', expertise: 85 },
+  { name: 'TensorFlow', expertise: 80 },
 ];
 
 const experiences = [
-  { company: 'Fiverr', position: 'Content Writer', duration: '2022 - Present', description: 'Content writer on Fiverr, offering my services which include Poetry, Prose, Skits, etc in English/Urdu' },
-  { company: 'Hewlett Packard Enterprise', position: 'Software Engineer', duration: 'Aug 2023 - Sep 2023', description: 'It was a Software Engineering job simulation program, implemented Restful Api in Spring Boot' },
+  { company: 'Fiverr', position: 'Flutter Developer', duration: '2022 - Present', description: 'Developed the HCQ (Health Colon Quest) app for a client, which is live on both the Apple App Store and Google Play. The app provides healthcare information, appointment scheduling, and educational resources.' },
+  { company: 'Hewlett Packard Enterprise', position: 'Software Engineer (Job Simulation)', duration: 'Aug 2023 - Sep 2023', description: 'Practiced Java Spring Boot development, implemented REST APIs, and worked on fetching and posting data. Also engaged with some frontend integration tasks.' },
   { company: 'Coding Samurai', position: 'Java Intern', duration: 'Sep 2023 - Oct 2023', description: 'Served as Java Intern for a month, solving problems using Java language' },
   { company: 'CodSoft', position: 'Machine Learning Intern', duration: 'Sep 2023 - Oct 2023', description: 'Served as Machine Learning Intern for a month, trained model for Next Word Prediction (LSTM), Email Spam classification, Waste Classification model using CNN' },
 ];
+
 
 const SkillProgressBar = ({ name, expertise }) => (
   <motion.div
@@ -59,20 +60,16 @@ const About = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <p className="mb-4">
-            Greetings! I am a dedicated <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Computer Science</motion.span> professional with a strong background in software development and a particular focus on <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Flutter app development</motion.span> and <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>AI research</motion.span>. Graduating from the University of Gujrat, Pakistan, I've cultivated a diverse skill set across various programming languages and technologies.
+            Hello! I'm <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Zahid Parviz</motion.span>, a passionate <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Mobile App Developer</motion.span> and AI/ML enthusiast with extensive experience in creating high-performance apps using Flutter and backend solutions with Django. I hold a Bachelor's in Computer Science from the University of Gujrat.
             <br/><br/>
-            My journey in technology has been marked by a passion for innovation and <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>problem-solving</motion.span>. I excel in areas such as <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Data Structures and Algorithms, Object-Oriented Programming, Database Management, App Development, Artificial Intelligence, and Deep Learning</motion.span>.
+            My expertise spans <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Flutter App Development</motion.span>, where I build cross-platform applications for Android and iOS. I am also skilled in <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>AI/ML/DL model training</motion.span> using TensorFlow and Python, contributing to various projects in healthcare, waste management, and text classification.
             <br/><br/>
-            As a seasoned <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Flutter developer</motion.span>, I have crafted numerous <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>cross-platform</motion.span> mobile applications that seamlessly blend functionality with exceptional user experiences. Moreover, my expertise extends to AI/ML/DL model training, where I've demonstrated a talent for developing intelligent solutions that drive tangible results.
+            I thrive in environments where innovation meets practicality. I’ve developed apps with features such as <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>real-time messaging, AI-driven content generation, and image classification</motion.span>. I am always exploring the latest technologies and integrating them into my work to drive efficiency and results.
           </p>
           <p>
-            What sets me apart is my dedication to <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>continuous</motion.span> learning and exploration. Whether delving into <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>cutting-edge AI research or engaging in robotics projects as a hobbyist</motion.span>, I thrive on staying at the forefront of technological advancements.
+            I believe in the power of technology to transform industries and improve lives. Whether it’s building user-friendly mobile applications or experimenting with cutting-edge AI models, my goal is to <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>deliver impactful solutions</motion.span>. With hands-on experience in AI and app development, I bring versatility and deep technical understanding to every project.
             <br/><br/>
-            With a proven track record of delivering successful projects across various domains, from .NET and Kotlin for mobile app development to SQL for database management and Python for AI applications, I bring versatility and adaptability to every endeavor.
-            <br/><br/>
-            I am always seeking <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>opportunities</motion.span> to apply my skills and expertise in Flutter development and AI research to contribute meaningfully to innovative projects. If you're looking for a passionate professional who is eager to make a difference, let's connect and discuss how I can add value to your team or <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>organization.</motion.span>
-            <br/><br/>
-            Let's collaborate and bring ideas to life!
+            If you are looking for someone who can deliver innovative solutions in mobile app development or AI-driven applications, feel free to reach out. Together, we can bring your vision to life!
           </p>
         </div>
         <div className="relative w-64 h-64 overflow-hidden rounded-lg shadow-lg">
