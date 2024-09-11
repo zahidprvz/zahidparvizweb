@@ -8,21 +8,23 @@ const Contact = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    emailjs.sendForm('service_dnx139j', 'template_3v8i70f', form.current, {
-      publicKey: 'RzkdNka2Z1Gf5hVrt',
-    })
+    // Ensure the proper keys are used to connect to EmailJS
+    emailjs.sendForm(
+      'service_dnx139j',        // Your EmailJS service ID
+      'template_3v8i70f',       // Your EmailJS template ID
+      form.current,             // Reference to the form
+      'RzkdNka2Z1Gf5hVrt'       // Your EmailJS public key
+    )
       .then((response) => {
         alert('SUCCESS!', response.status, response.text);
         const message = document.createElement('div');
-        message.classList.add('notification');
-        message.classList.add('success');
+        message.classList.add('notification', 'success');
         message.textContent = 'Your message has been sent successfully!';
         document.body.appendChild(message);
       }, (error) => {
         alert('FAILED...', error);
         const message = document.createElement('div');
-        message.classList.add('notification');
-        message.classList.add('error');
+        message.classList.add('notification', 'error');
         message.textContent = 'An error occurred while sending your message. Please try again later.';
         document.body.appendChild(message);
       });
@@ -35,7 +37,7 @@ const Contact = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <div className="container mx-auto px-4 py-16 w-full"> {/* Ensure full width */}
+      <div className="container mx-auto px-4 py-16 w-full">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-white">Contact Me</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="space-y-4">
@@ -43,15 +45,15 @@ const Contact = () => {
             <form ref={form} onSubmit={handleSubmit} className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-gray-600">Your Name</label>
-                <input type="text" id="name" name="name" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" />
+                <input type="text" id="name" name="user_name" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" required />
               </div>
               <div>
                 <label htmlFor="email" className="block text-gray-600">Your Email</label>
-                <input type="email" id="email" name="email" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" />
+                <input type="email" id="email" name="user_email" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" required />
               </div>
               <div>
                 <label htmlFor="message" className="block text-gray-600">Your Message</label>
-                <textarea id="message" name="message" rows="4" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500"></textarea>
+                <textarea id="message" name="message" rows="4" className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:border-blue-500" required></textarea>
               </div>
               <button type="submit" className="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 focus:outline-none">Send Message</button>
             </form>
