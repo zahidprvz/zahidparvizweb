@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { NavLink, useLocation } from 'react-router-dom';
 import profileImage from '../assets/profile.png';
 import { FiDownload } from 'react-icons/fi';
-import resumeFile from '../assets/zahidparviz.pdf';
+import resumeFile from '../assets/zahidparviz.pdf'; // Use a local import for the resume
 
 const navLinks = [
   { name: 'Home', path: '/' },
-  // Projects link is disabled as requested
+  { name: 'Projects', path: '/projects' },
   { name: 'About', path: '/about' },
   { name: 'Contact', path: '/contact' },
 ];
@@ -22,7 +22,7 @@ const Header = () => {
 
   const menuVariants = {
     open: { opacity: 1, x: 0 },
-    closed: { opacity: 0, x: '100%' },
+    closed: { opacity: 0, x: "100%" },
   };
 
   return (
@@ -39,7 +39,7 @@ const Header = () => {
             alt="Zahid Parviz"
             className="w-12 h-12 md:w-14 md:h-14 rounded-full border-2 border-yellow-400 p-0.5"
             whileHover={{ scale: 1.1, rotate: 10 }}
-            transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
           />
           <NavLink to="/" className="flex flex-col">
             <h1 className="text-xl md:text-2xl font-bold text-white leading-tight">Zahid Parviz</h1>
@@ -64,7 +64,7 @@ const Header = () => {
                   className="absolute bottom-[-5px] left-0 right-0 h-0.5 bg-yellow-400"
                   layoutId="underline"
                   initial={{ width: 0 }}
-                  animate={{ width: '100%' }}
+                  animate={{ width: "100%" }}
                   transition={{ duration: 0.3 }}
                 />
               )}
@@ -96,9 +96,9 @@ const Header = () => {
         <motion.div
           className={`fixed top-0 right-0 w-64 h-full bg-gray-900 p-6 shadow-lg transform z-50 md:hidden`}
           initial="closed"
-          animate={isMenuOpen ? 'open' : 'closed'}
+          animate={isMenuOpen ? "open" : "closed"}
           variants={menuVariants}
-          transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+          transition={{ type: "spring", stiffness: 200, damping: 20 }}
         >
           <button onClick={toggleMenu} className="absolute top-4 right-4 text-white">
             <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
