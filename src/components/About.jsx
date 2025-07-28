@@ -114,7 +114,7 @@ const About = () => {
         </motion.div>
         
         <motion.div 
-          className="relative w-full max-w-sm mx-auto h-80 overflow-hidden rounded-lg shadow-lg"
+          className="relative w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
@@ -122,7 +122,7 @@ const About = () => {
           <motion.img 
             src={aboutImage} 
             alt="About Me" 
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-auto object-contain rounded-lg" // Changed h-full to h-auto and object-cover to object-contain
             animate={{ y: [0, 10, -10, 0] }} 
             transition={{ duration: 4, repeat: Infinity, repeatType: "reverse" }} 
             whileHover={{ scale: 1.05 }}
