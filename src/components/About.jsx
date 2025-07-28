@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion'; // Import motion from Framer Motion
-import aboutImage from '../assets/aboutme.jpg'; // Importing the image
+import aboutImage from '../assets/aboutme.png'; // Importing the image
 
 const skills = [
   { name: 'Flutter App Development', expertise: 95 },
