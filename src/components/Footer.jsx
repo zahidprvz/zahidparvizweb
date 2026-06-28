@@ -27,7 +27,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold text-white mb-2">Zahid Parviz</h3>
             <p className="text-gray-400 max-w-sm mx-auto md:mx-0">
-              Passionate about building innovative software solutions at the intersection of AI and enterprise technology.
+              Enterprise Microsoft business applications: Dynamics 365 CE, Power Platform, and Azure integration. Microsoft Certified (PL-200).
             </p>
           </div>
           
