@@ -98,18 +98,20 @@ const About = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="mb-4 text-lg leading-relaxed">
-            Hello! I'm <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Zahid Parviz</motion.span>, a passionate <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Software Engineer</motion.span> and AI/ML enthusiast with extensive experience in enterprise solutions, mobile app development, and artificial intelligence. I hold a Bachelor's in Computer Science from the University of Gujrat and currently work as an Associate Software Engineer at Devsinc.
+            Hello! I'm <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Zahid Parviz</motion.span>.
             <br/><br/>
-            My expertise spans <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Microsoft Dynamics 365 CE, Azure Data Factory, and .NET technologies</motion.span>, where I build enterprise-level solutions for international clients. I'm also skilled in <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>AI/ML model development</motion.span> using TensorFlow, Google Gemini API, and computer vision, contributing to healthcare, nutrition tracking, and waste management projects.
-            <br/><br/>
-            I thrive in environments where innovation meets practicality. I've developed apps with features such as <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>AI-powered food analysis, intelligent waste classification, and robotics control systems</motion.span>. My final year project involved building a two-wheeled self-balancing robot with custom PID control algorithms.
-          </p>
-          <p className="text-lg leading-relaxed">
-            I believe in the power of technology to transform industries and improve lives. Whether it's building enterprise software solutions, developing AI-integrated mobile applications, or experimenting with robotics, my goal is to <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>deliver impactful solutions that solve real-world problems</motion.span>. 
-            <br/><br/>
-            My passion lies at the intersection of <motion.span style={{color: '#F59E0B', fontWeight: 'bold'}}>Artificial Intelligence and Robotics</motion.span>, inspired by childhood fascination with intelligent machines. I've won the National Creative Business Idea Competition (1st place among 55+ universities) and maintain 100+ GitHub repositories with published apps on both App Store and Play Store.
-            <br/><br/>
-            If you are looking for someone who can deliver innovative solutions in enterprise software, AI-driven applications, or cutting-edge technology integration, feel free to reach out. Together, we can bring your vision to life!
+            Enterprise CRM looks like configuration from the outside. Underneath, it is system design, data architecture, and integration engineering that hundreds of people depend on every day. When it breaks, operations stop. When it is built well, it disappears into the background. I build and integrate in that layer.
+
+At a certified Microsoft Partner, I deliver Dynamics 365 CE, Power Platform, and Azure solutions for US and UK clients across nonprofit, public sector, healthcare, and financial services. My work runs the full delivery surface:
+
+- Dynamics 365 CE: C# plugins, PCF controls, JavaScript web resources, FetchXML, SSRS/RDL, and solution lifecycle management.
+- Power Platform: model-driven, canvas, and custom-page Power Apps, 200+ Power Automate flows covering business-critical automation and multi-stage approvals, and Power Pages.
+- Azure: Data Factory pipelines, Functions, Logic Apps, and Dual Write between Dynamics 365 CE and Finance and Operations, with CI/CD through GitHub Actions.
+            
+A few results I am proud of: a 94% pipeline performance gain (32 seconds to 2 seconds per batch) while migrating 12+ years of audit records from Salesforce to Dynamics 365; an on-premises to Azure CRM migration delivered with zero data-integrity issues in UAT; and 110+ production tickets resolved at 99%+ first-pass client acceptance on a sustained enterprise programme.
+The problems I find most interesting sit at the edges, where the standard platform model does not fit the requirement and a naive solution works today but fails under load. Those need thinking beyond the immediate ticket.
+I hold the Microsoft PL-200 certification and am building deliberately toward the convergence of business applications, Azure, and AI: the shift from systems of record to systems of intelligence, and the agentic, Copilot-driven direction the Microsoft platform is moving in.
+If any of this connects with what you are building, reach me at pervaizzahid55@gmail.com.
           </p>
         </motion.div>
         
