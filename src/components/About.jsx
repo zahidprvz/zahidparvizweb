@@ -3,44 +3,30 @@ import { motion } from 'framer-motion'; // Import motion from Framer Motion
 import aboutImage from '../assets/aboutme.png'; // Importing the image
 
 const skills = [
-  { name: 'Flutter App Development', expertise: 95 },
-  { name: 'Microsoft Dynamics 365 CE', expertise: 85 },
-  { name: 'AI/ML/Deep Learning', expertise: 92 },
-  { name: 'Data Structures & Algorithms', expertise: 85 },
-  { name: '.NET & C#', expertise: 88 },
-  { name: 'Python & TensorFlow', expertise: 90 },
-  { name: 'JavaScript & React.js', expertise: 80 },
-  { name: 'Firebase & Backend', expertise: 87 },
-  { name: 'Azure Data Factory', expertise: 75 },
-  { name: 'Computer Vision & CNN', expertise: 88 },
-  { name: 'Robotics & Arduino', expertise: 82 },
-  { name: 'Google Gemini API', expertise: 85 },
+  { name: 'Dynamics 365 CE (Plugins, PCF, JavaScript)', expertise: 90 },
+  { name: 'Power Platform (Power Apps, Power Automate, Power Pages)', expertise: 90 },
+  { name: 'Dataverse & Solution Lifecycle Management', expertise: 88 },
+  { name: 'C# / .NET', expertise: 88 },
+  { name: 'Azure Integration (Data Factory, Functions, Logic Apps)', expertise: 82 },
+  { name: 'Dual Write (D365 CE / F&O)', expertise: 80 },
+  { name: 'REST APIs & Webhooks', expertise: 85 },
+  { name: 'SQL / Azure SQL', expertise: 85 },
+  { name: 'JavaScript', expertise: 82 },
+  { name: 'CI/CD (GitHub Actions, Azure DevOps)', expertise: 80 },
 ];
 
 const experiences = [
-  { 
-    company: 'Devsinc', 
-    position: 'Associate Software Engineer', 
-    duration: 'Jan 2025 - Present', 
-    description: 'Working with Microsoft Dynamics 365 CE, Azure Data Factory, JavaScript, and .NET technologies for enterprise solutions. Independently managing end-to-end project for U.S.-based client, demonstrating leadership and technical expertise in business process automation.' 
+  {
+    company: 'Devsinc (Microsoft Partner)',
+    position: 'Software Engineer II',
+    duration: 'Jan 2025 - Present',
+    description: 'Delivering Dynamics 365 CE, Power Platform, and Azure solutions for US and UK enterprise clients. Progressed from Associate Software Engineer to Software Engineer II. Re-engineered ADF pipelines for a 94% throughput gain on a multi-year audit migration, implemented Dual Write between D365 CE and Finance and Operations, led an on-premises to Azure CRM migration with zero data-integrity issues, and built and maintained 200+ Power Automate flows.'
   },
-  { 
-    company: 'Biology Circle', 
-    position: 'Web Developer', 
-    duration: 'Jun 2024 - Sep 2024', 
-    description: 'Developed complete academic journal system using Open Journal Systems (OJS) with PHP, MySQL, and custom styling. Engineered custom functionalities by overriding core system code to meet unique publishing requirements for 500+ researchers.' 
-  },
-  { 
-    company: 'PeakTew', 
-    position: 'Flutter Developer', 
-    duration: 'Nov 2024 - Mar 2025', 
-    description: 'Collaborated with multinational team across different time zones to develop and enhance mobile app features. Resolved front-end UI bugs and Firebase notification issues, improving app functionality by 25%. Implemented GPS-based location tracking and push notification systems.' 
-  },
-  { 
-    company: 'Fiverr', 
-    position: 'Freelance Flutter Developer', 
-    duration: 'Oct 2022 - Jan 2025', 
-    description: 'Delivered 15+ mobile applications for international clients with 5-star ratings. Specialized in AI-integrated apps including NutriAI (nutrition tracking with Google Gemini API), ZenFlector (meditation app), and Health Colon Quest (published on both App Store and Play Store).' 
+  {
+    company: 'Biology Circle',
+    position: 'Web Developer (Contract)',
+    duration: 'Jul 2024 - Jan 2025',
+    description: 'Delivered a production academic journal platform on Open Journal Systems (PHP, MySQL) two weeks ahead of a three-month deadline, serving 500+ monthly researchers at 100% uptime, with a 40% increase in engagement and a 30% faster submission-to-review cycle.'
   },
 ];
 
