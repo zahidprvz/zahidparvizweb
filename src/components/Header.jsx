@@ -44,7 +44,7 @@ const Header = () => {
           <NavLink to="/" className="flex flex-col">
             <h1 className="text-xl md:text-2xl font-bold text-white leading-tight">Zahid Parviz</h1>
             <p className="text-sm md:text-base text-gray-400 hidden sm:block">
-              Software Engineer & AI Researcher
+              Dynamics 365 CE & Power Platform Engineer
             </p>
           </NavLink>
         </div>
