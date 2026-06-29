@@ -1,23 +1,35 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Projects from './components/Projects';
+import Home from './components/Home';
+import Work from './components/Work';
+import CaseStudy from './components/CaseStudy';
 import About from './components/About';
 import Contact from './components/Contact';
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
+  return null;
+};
 
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
+      <ScrollToTop />
+      <div className="flex flex-col min-h-screen bg-slate-950">
         <Header />
-        <div className="pt-2 pb-2 flex-grow mb-20"> {/* Add mb-20 for bottom margin */}
-          <Routes> 
-            <Route path="/" element={<Projects />} /> 
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/case-study/:slug" element={<CaseStudy />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>
