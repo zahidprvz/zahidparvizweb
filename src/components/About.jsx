@@ -1,17 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import aboutImage from '../assets/aboutme.png';
+import { SiDotnet, SiSharp, SiJavascript, SiGithubactions } from 'react-icons/si';
 import {
-  SiDotnet, SiSharp, SiMicrosoftazure, SiPowerapps, SiPowerautomate,
-  SiJavascript, SiMicrosoft, SiGithubactions,
-} from 'react-icons/si';
-import { FaDatabase, FaPlug, FaCode, FaCloud } from 'react-icons/fa';
+  FaDatabase, FaPlug, FaCode, FaCloud, FaMicrosoft,
+  FaNetworkWired, FaServer, FaBolt,
+} from 'react-icons/fa';
 
 // ---- Skill groups: icon + label + one real descriptor line, no fake percentages ----
 const skillGroups = [
   {
     category: 'Dynamics 365 CE',
-    icon: <SiMicrosoft className="text-2xl" />,
+    icon: <FaMicrosoft className="text-2xl" />,
     items: [
       { icon: <FaPlug />, name: 'Plugins (C# / IPlugin)' },
       { icon: <FaCode />, name: 'PCF Controls' },
@@ -21,20 +21,20 @@ const skillGroups = [
   },
   {
     category: 'Power Platform',
-    icon: <SiPowerapps className="text-2xl" />,
+    icon: <FaBolt className="text-2xl" />,
     items: [
-      { icon: <SiPowerapps />, name: 'Power Apps (Model-driven, Canvas)' },
-      { icon: <SiPowerautomate />, name: 'Power Automate (200+ flows)' },
+      { icon: <FaBolt />, name: 'Power Apps (Model-driven, Canvas)' },
+      { icon: <FaNetworkWired />, name: 'Power Automate (200+ flows)' },
       { icon: <FaCloud />, name: 'Power Pages' },
       { icon: <FaDatabase />, name: 'Dataverse & Solution ALM' },
     ],
   },
   {
     category: 'Azure & Integration',
-    icon: <SiMicrosoftazure className="text-2xl" />,
+    icon: <FaCloud className="text-2xl" />,
     items: [
-      { icon: <SiMicrosoftazure />, name: 'Azure Data Factory' },
-      { icon: <FaCloud />, name: 'Azure Functions & Logic Apps' },
+      { icon: <FaCloud />, name: 'Azure Data Factory' },
+      { icon: <FaServer />, name: 'Azure Functions & Logic Apps' },
       { icon: <FaDatabase />, name: 'Dual Write (D365 CE / F&O)' },
       { icon: <SiGithubactions />, name: 'CI/CD (GitHub Actions)' },
     ],
