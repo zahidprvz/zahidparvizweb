@@ -1,23 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { SiDotnet, SiSharp, SiJavascript, SiGithubactions } from 'react-icons/si';
 import {
-  SiDotnet, SiSharp, SiMicrosoftazure, SiPowerapps, SiPowerautomate,
-  SiJavascript, SiMicrosoft, SiGithubactions,
-} from 'react-icons/si';
-import { FaDatabase, FaCloud, FaCode, FaPlug } from 'react-icons/fa';
+  FaDatabase, FaCloud, FaCode, FaPlug, FaMicrosoft,
+  FaNetworkWired, FaServer, FaBolt,
+} from 'react-icons/fa';
 
 // Single source of truth for the stack pills. Edit this array only —
 // both Home and About can import from here if you want full consistency.
 export const techStack = [
-  { name: 'Dynamics 365 CE', icon: <SiMicrosoft /> },
-  { name: 'Power Apps', icon: <SiPowerapps /> },
-  { name: 'Power Automate', icon: <SiPowerautomate /> },
+  { name: 'Dynamics 365 CE', icon: <FaMicrosoft /> },
+  { name: 'Power Apps', icon: <FaBolt /> },
+  { name: 'Power Automate', icon: <FaNetworkWired /> },
   { name: 'Power Pages', icon: <FaCloud /> },
   { name: 'Dataverse', icon: <FaDatabase /> },
   { name: 'C# / .NET', icon: <SiSharp /> },
-  { name: 'Azure Data Factory', icon: <SiMicrosoftazure /> },
-  { name: 'Azure Functions', icon: <FaCloud /> },
-  { name: 'Logic Apps', icon: <FaCloud /> },
+  { name: 'Azure Data Factory', icon: <FaCloud /> },
+  { name: 'Azure Functions', icon: <FaServer /> },
+  { name: 'Logic Apps', icon: <FaServer /> },
   { name: 'Dual Write', icon: <FaDatabase /> },
   { name: 'PCF', icon: <FaCode /> },
   { name: 'SQL', icon: <FaDatabase /> },
